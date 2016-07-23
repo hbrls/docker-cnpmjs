@@ -4,4 +4,4 @@
 # Docker
 
     $ docker build -t hbrls/cnpm:0.0.1 .
-    $ docker run -it --rm hbrls/cnpm:0.0.1 /bin/bash
+    $ docker run -d -p 7001:7001 -p 7002:7002 --name cnpm hbrls/cnpm:0.0.1

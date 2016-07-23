@@ -14,10 +14,19 @@ RUN \
 ENV APPDIR /var/app/cnpmjs.org-2.12.2
 WORKDIR ${APPDIR}
 
+# error prone
+RUN npm install sqlite3@3.1.4
+RUN npm install babel-core@6.7.7
+RUN npm install babel-preset-es2015@6.6.0
+RUN npm install babel-preset-react@6.5.0
+RUN npm install babel-preset-stage-0@6.5.0
+RUN npm install autod@2.6.1
+RUN npm install istanbul@0.4.4
+RUN npm install node-dev@3.1.3
 
 RUN npm install
 
-EXPOSE 8080
+EXPOSE 7001 7002
 
 # Entrypoint
-CMD ["npm run start"]
+CMD ["/usr/local/bin/node", "/var/app/cnpmjs.org-2.12.2/dispatch.js"]
