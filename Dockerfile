@@ -3,7 +3,7 @@ FROM node:4-slim
 
 # Working enviroment
 ENV APPDIR /var/app/cnpmjs.org
-ENV CNPMJS_ORG_VERSION 2.12.2
+ENV CNPMJS_ORG_VERSION 2.13.0
 
 RUN \
   mkdir /var/app && \
