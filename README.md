@@ -1,12 +1,12 @@
 # docker-cnpm
 
-docker image of [cnpmjs.org](https://cnpmjs.org/), the "Company NPM" by alibaba ![cnpmjs.org-version-badge](https://img.shields.io/badge/cnpm-2.13.0-blue.svg?style=flat-square)
+docker image of [cnpmjs.org](https://cnpmjs.org/), the "Company NPM" by alibaba ![cnpmjs.org-version-badge](https://img.shields.io/badge/cnpm-2.17.2-blue.svg?style=flat-square)
 
 https://hub.docker.com/r/hbrls/cnpmjs/
 
 # Easy
 
-    $ docker pull hbrls/cnpm:0.0.3
+    $ docker pull hbrls/cnpm:0.0.4
     $ docker run -d \
                  -p 7001:7001 \
                  -p 7002:7002 \
