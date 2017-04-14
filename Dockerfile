@@ -1,9 +1,9 @@
-FROM node:4-slim
+FROM node:6.10.2-slim
 
 
 # Working enviroment
 ENV APPDIR /var/app/cnpmjs.org
-ENV CNPMJS_ORG_VERSION 2.17.2
+ENV CNPMJS_ORG_VERSION 2.19.4
 
 RUN \
   mkdir /var/app && \
